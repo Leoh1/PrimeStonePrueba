@@ -24,6 +24,7 @@ def punto_2(n: int) -> str:
     assert n < 10, "El numero es mayor a 10"
     import itertools
 
+    print('n: '+str(n))
     number_array = [str(number) for number in range(1, n+1)]
     array_string = ''.join(number_array)
     tuple_permutations = itertools.permutations(array_string, n)
@@ -83,7 +84,7 @@ def main():
     n = 4
     print(punto_2(n))
 
-    # Punto 4
+    # # Punto 4
     separator()
     print('Punto 3:')
     frame = '58A6 FC89 BD1A 4313 1250 0F21 C89B D1A4'
